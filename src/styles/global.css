@@ -5,4 +5,6 @@
 
 body {
     background-color: #020a6d;
+    background-image: url('../images/bg-paper.webp');
+    background-repeat: repeat;
 }
