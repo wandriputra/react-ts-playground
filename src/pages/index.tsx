@@ -1,11 +1,16 @@
 import * as React from "react"
 import Logo from '../images/logo.webp'
+import Icon from "../images/icon.png"
 import { FaFacebook, FaInstagram, FaTwitterSquare, FaYoutube } from 'react-icons/fa';
+import { Helmet } from 'react-helmet'
 
 // markup
 const IndexPage = () => {
   return (
     <>
+      <Helmet>
+        <link rel="icon" href={Logo} />
+      </Helmet>
       <div className="flex flex-col justify-center items-center h-screen">
         <div className="pb-16">
           <img src={Logo} width="300px" className="mx-auto" alt="Persatuan Sepak Bola Cilacap dan Sekitarnya, commonly known as PSCS Cilacap is a football club in Indonesia, based in Cilacap Regency, Central Java. In 2018, the club was promoted to the Liga 2 after became the runner-up of 2018 Liga 3." />
